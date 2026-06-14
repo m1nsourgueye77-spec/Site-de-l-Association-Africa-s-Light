@@ -3,224 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="css/style.css">
 <title>Africa's Light Association</title>
 
-<style>
 
-:root{
---gold:#E0A11B;
---blue:#0D6678;
---green:#4B9445;
---white:#ffffff;
---dark:#222;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-}
-
-body{
-background:#f7f7f7;
-}
-
-/* HEADER */
-
-header{
-background:var(--blue);
-padding:15px 5%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-height:60px;
-}
-
-.logo h2{
-color:white;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin-left:20px;
-}
-
-nav ul li a{
-text-decoration:none;
-color:white;
-font-weight:bold;
-}
-
-/* HERO */
-
-.hero{
-height:80vh;
-background:linear-gradient(
-rgba(0,0,0,.65),
-rgba(0,0,0,.65)
-),
-url("images/afrique.jpg");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content{
-max-width:900px;
-color:white;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.btn{
-background:var(--gold);
-color:white;
-padding:15px 30px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-/* SECTION */
-
-.section{
-padding:70px 10%;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:40px;
-color:var(--blue);
-}
-
-/* CARDS */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 3px 12px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-color:var(--green);
-margin-bottom:10px;
-}
-
-/* FORMULAIRE */
-
-.form-box{
-background:white;
-padding:30px;
-max-width:600px;
-margin:auto;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-.form-box input,
-.form-box select{
-width:100%;
-padding:15px;
-margin-bottom:15px;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-.form-box button{
-width:100%;
-padding:15px;
-background:var(--green);
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-size:18px;
-}
-
-/* FOOTER */
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-footer a{
-color:var(--gold);
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-nav{
-display:none;
-}
-
-.hero h1{
-font-size:35px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-
-</style>
 </head>
-<body>
-
-
-
+<body id="haut">
 
 <header>
 <div class="logo">
 <img src="images\Logo Africa's Light.png" alt="Africa's Light Logo">
 <h2>Africa's Light</h2>
 </div>
+
 
 <nav>
 <ul>
@@ -231,9 +26,7 @@ font-size:18px;
 <li><a href="commissions.html">Commissions</a></li>
 <li><a href="actualites.html">Actualités</a></li>
 <li><a href="galerie.html">Galerie</a></li>
-<li><a href="adhesion.html" class="btn">
-Adhérer Maintenant
-</a></li>
+<li><a href="adhesion.html">Adhésion</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
@@ -263,50 +56,7 @@ Adhérer Maintenant
 
 
 
-<section class="section">
 
-<div class="card"
-style="
-max-width:700px;
-margin:auto;
-text-align:center;
-background:#25D366;
-color:white;
-">
-
-<h2>
-💬 Nous contacter sur WhatsApp
-</h2>
-
-<br>
-
-<p>
-Pour toute information concernant nos activités,
-les adhésions ou les dons.
-</p>
-
-<br>
-
-<a
-href="https://wa.me/221764737729"
-target="_blank"
-style="
-background:white;
-color:#25D366;
-padding:15px 30px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-display:inline-block;
-">
-
-Écrire sur WhatsApp
-
-</a>
-
-</div>
-
-</section>
 
 
 
@@ -333,7 +83,7 @@ Notre Communauté
 <section class="section">
 
 <h2 class="section-title">
-Nos Commissions
+Nos Activités
 </h2>
 
 <div class="cards">
@@ -347,20 +97,111 @@ Nos Commissions
 <h3>Organisation</h3>
 <p>Coordination des activités et événements.</p>
 </div>
-
 <div class="card">
 <h3>Finances</h3>
 <p>Gestion financière et partenariats.</p>
 </div>
-
 <div class="card">
 <h3>Mobilisation</h3>
 <p>Adhésion et engagement citoyen.</p>
+</div>
+</div>
+
+</section>
+
+
+
+<section class="section" id="galerie">
+
+<h2 class="section-title">
+📸 Galerie Photos & Vidéos
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/photo1.jpg"
+alt="Action solidaire"
+style="width:100%;border-radius:10px;">
+
+<h3>Action Solidaire</h3>
+<p>Distribution de dons aux familles vulnérables.</p>
+</div>
+
+<div class="card">
+<img src="images/photo2.jpg"
+alt="Journée de réflexion"
+style="width:100%;border-radius:10px;">
+
+<h3>Journée de Réflexion</h3>
+<p>Échanges et sensibilisation citoyenne.</p>
+</div>
+
+<div class="card">
+<img src="images/photo3.jpg"
+alt="Journée Portes Ouvertes"
+style="width:100%;border-radius:10px;">
+
+<h3>Journée Portes Ouvertes</h3>
+<p>Présentation officielle d'Africa's Light Association.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<h3 style="text-align:center;color:#0D6678;">
+🎥 Vidéos de l'Association
+</h3>
+
+<div class="cards">
+
+<div class="card">
+
+<video
+controls
+width="100%"
+poster="images/video-cover1.jpg">
+
+<source
+src="documents/video1.mp4"
+type="video/mp4">
+
+Votre navigateur ne supporte pas la vidéo.
+
+</video>
+
+<p style="margin-top:15px;">
+Présentation des activités de l'association.
+</p>
+
+</div>
+
+<div class="card">
+
+<video
+controls
+width="100%"
+poster="images/video-cover2.jpg">
+
+<source
+src="documents/video2.mp4"
+type="video/mp4">
+
+Votre navigateur ne supporte pas la vidéo.
+
+</video>
+
+<p style="margin-top:15px;">
+Messages et témoignages des membres.
+</p>
+
 </div>
 
 </div>
 
 </section>
+
 
 
 
@@ -374,25 +215,20 @@ Nos Commissions
 
 <div class="card">
 <h3>🌟 Journée Portes Ouvertes</h3>
-<p>
-Samedi 11 juillet 2026 au CDEPS de Petit Mbao.
-</p>
+<p>Samedi 11 juillet 2026 au CDEPS de Petit Mbao.</p>
+<a href="actualites.html" class="btn">Lire plus</a>
 </div>
 
 <div class="card">
 <h3>❤️ Appel aux Dons</h3>
-<p>
-Mobilisation en faveur des enfants vulnérables,
-orphelins et enfants atteints d'IMC.
-</p>
+<p>Mobilisation en faveur des enfants vulnérables.</p>
+<a href="actualites.html" class="btn">Lire plus</a>
 </div>
 
 <div class="card">
 <h3>🤝 Campagne d'Adhésion</h3>
-<p>
-Rejoignez Africa's Light Association et participez
-à nos actions citoyennes.
-</p>
+<p>Rejoignez Africa's Light Association.</p>
+<a href="actualites.html" class="btn">Lire plus</a>
 </div>
 
 </div>
@@ -402,83 +238,102 @@ Rejoignez Africa's Light Association et participez
 
 
 <section class="section" id="adhesion">
-
 <h2 class="section-title">
 Adhérer à l'Association
 </h2>
-
 <div class="form-box">
-
 <form id="adhesionForm">
-
 <input type="text"
 placeholder="Nom et prénom"
 required>
-
 <input type="tel"
 placeholder="Téléphone"
 required>
-
 <input type="email"
 placeholder="Adresse email">
-
 <select>
 
 <option>
 Commission Communication
 </option>
-
 <option>
 Commission Organisation
 </option>
-
 <option>
 Commission Finances
 </option>
-
 <option>
 Commission Mobilisation
 </option>
-
 </select>
-
 <button type="submit">
 Envoyer la demande
 </button>
-
 </form>
-
 </div>
 
 </section>
 
 
+
+<section class="section">
+<div class="card"
+style="
+max-width:700px;
+margin:auto;
+text-align:center;
+background:#25D366;
+color:white;
+">
+
+<h2>
+💬 Nous contacter sur WhatsApp
+</h2>
+<br>
+<p>
+Pour toute information concernant nos activités,
+les adhésions ou les dons.
+</p>
+<br>
+<a
+href="https://wa.me/221764737729"
+target="_blank"
+style="
+background:white;
+color:#25D366;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+display:inline-block;
+">
+
+Écrire sur WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
 <footer>
-
 <h3>Africa's Light Association</h3>
-
 <p>
 Ensemble pour une citoyenneté active
 et un développement solidaire.
 </p>
-
 <p>📧 contact@africalight.org</p>
 <p>📱 +221 76 473 77 29</p>
 <p>📍 CDEPS de Petit Mbao, Sénégal</p>
-
 <br>
-
 <p>
 © 2026 Africa's Light Association
 </p>
-
 <p>
 Conçu et développé par
 <strong>Mansour Gueye - Gi.Code</strong>
 </p>
-
 </footer>
-
 
 </body>
 </html>

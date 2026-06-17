@@ -210,34 +210,30 @@ Messages et témoignages des membres.
 Adhérer à l'Association
 </h2>
 <div class="form-box">
-<form id="adhesionForm">
-<input type="text"
-placeholder="Nom et prénom"
-required>
-<input type="tel"
-placeholder="Téléphone"
-required>
-<input type="email"
-placeholder="Adresse email">
-<select>
 
-<option>
-Commission Communication
-</option>
-<option>
-Commission Organisation
-</option>
-<option>
-Commission Finances
-</option>
-<option>
-Commission Mobilisation
-</option>
-</select>
-<button type="submit">
-Envoyer la demande
-</button>
+
+<form id="adhesionForm">
+
+  <input type="text" id="nom" placeholder="Nom et prénom" required>
+
+  <input type="tel" id="telephone" placeholder="Téléphone" required>
+
+  <input type="email" id="email" placeholder="Adresse email">
+
+  <select id="commission">
+    <option value="">Choisir une commission</option>
+    <option value="Communication">Commission Communication</option>
+    <option value="Organisation">Commission Organisation</option>
+    <option value="Finances">Commission Finances</option>
+    <option value="Mobilisation">Commission Mobilisation</option>
+  </select>
+
+  <button type="submit">Envoyer la demande</button>
+
 </form>
+
+<div id="message" style="text-align:center;margin-top:10px;font-weight:bold;"></div>
+
 </div>
 
 </section>
@@ -316,21 +312,31 @@ display:inline-block;
 
 </section>
 
+<input type="password" id="pass" placeholder="Mot de passe">
+<button onclick="login()">Connexion</button>
+
+
+
 <script>
+const ADMIN_PASS = "Africa123";
+
 const API_URL = "https://script.google.com/macros/s/AKfycbzywnpiZyMMubr0_Zz1iyg9t9Z5DFXdg6eKw4vFXPZHD9Trh9v9AfqCmUWcM4D1r7dj/exec";
 
 fetch(API_URL)
-  .then(res => res.json())
-  .then(data => {
+  .then(res => res.text())
+  .then(text => {
+    const data = JSON.parse(text);
+
+    if (!Array.isArray(data)) throw new Error("API invalide");
+
     let html = "";
 
     data.reverse().forEach(item => {
       html += `
         <div style="border:1px solid #ddd;padding:15px;margin:10px 0;border-radius:10px;">
-          <h3 style="color:#1a6f5a;">${item.titre}</h3>
-          <small>${item.date}</small>
-          <p>${item.contenu}</p>
-          ${item.image ? `<img src="${item.image}" style="width:100%;max-height:250px;object-fit:cover;border-radius:8px;">` : ""}
+          <h3 style="color:#1a6f5a;">${item.titre || ""}</h3>
+          <small>${item.date || ""}</small>
+          <p>${item.contenu || ""}</p>
         </div>
       `;
     });
@@ -338,8 +344,73 @@ fetch(API_URL)
     document.getElementById("news-container").innerHTML = html;
   })
   .catch(err => {
-    document.getElementById("news-container").innerHTML = "Erreur de chargement";
+    console.error(err);
+    document.getElementById("news-container").innerHTML =
+      "⚠️ Erreur de chargement des actualités";
   });
+</script>
+
+<script>
+function login(){
+  const pass = document.getElementById("pass").value;
+
+  if(pass === "Africa123"){
+    alert("Accès autorisé");
+    document.getElementById("news-container").style.display = "block";
+  } else {
+    alert("Mot de passe incorrect");
+  }
+}
+</script>
+
+<script>
+const API_ADHESION = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
+
+document.getElementById("adhesionForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const data = {
+    nom: document.getElementById("nom").value,
+    telephone: document.getElementById("telephone").value,
+    email: document.getElementById("email").value,
+    commission: document.getElementById("commission").value
+  };
+
+  console.log("ADHÉSION:", data);
+
+  fetch(API_ADHESION, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(text => {
+  try {
+    const data = JSON.parse(text);
+
+    if (!Array.isArray(data)) throw new Error("API invalide");
+
+    let html = "";
+
+    data.reverse().forEach(item => {
+      html += `
+        <div style="border:1px solid #ddd;padding:15px;margin:10px 0;border-radius:10px;">
+          <h3 style="color:#1a6f5a;">${item.titre || ""}</h3>
+          <small>${item.date || ""}</small>
+          <p>${item.contenu || ""}</p>
+        </div>
+      `;
+    });
+
+    document.getElementById("news-container").innerHTML = html;
+
+  } catch (e) {
+    console.error(e);
+    document.getElementById("news-container").innerHTML =
+      "⚠️ API invalide ou erreur serveur";
+  }
+})
 </script>
 
 
@@ -371,6 +442,7 @@ Site conçu et développé par
 <strong>Mansour Gueye - Gi.Code</strong>
 </p>
 </footer>
+
 
 </body>
 </html>

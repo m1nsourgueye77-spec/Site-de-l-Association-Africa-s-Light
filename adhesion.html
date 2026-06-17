@@ -48,3 +48,35 @@ Envoyer la demande
 </form>
 
 <div id="message"></div>
+
+
+<script>
+const API_URL = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
+
+document.getElementById("adhesionForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const data = {
+    nom: document.getElementById("nom").value,
+    telephone: document.getElementById("telephone").value,
+    email: document.getElementById("email").value,
+    commission: document.getElementById("commission").value
+  };
+
+  fetch(API_URL + "?type=adhesion", {
+    method: "POST",
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(response => {
+    document.getElementById("message").innerHTML =
+      "✅ Demande envoyée avec succès !";
+
+    document.getElementById("adhesionForm").reset();
+  })
+  .catch(err => {
+    document.getElementById("message").innerHTML =
+      "❌ Erreur lors de l'envoi";
+  });
+});
+</script>

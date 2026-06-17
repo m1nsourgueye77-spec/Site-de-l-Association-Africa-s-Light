@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard ONG</title>
+<style>
+body {font-family:Arial;background:#f4f4f4;padding:20px;}
+.container {max-width:900px;margin:auto;background:white;padding:20px;border-radius:10px;}
+.card {border:1px solid #ddd;margin:10px;padding:10px;border-radius:8px;}
+h2 {text-align:center;color:#1a6f5a;}
+button {background:#1a6f5a;color:white;padding:5px 10px;border:none;}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2>Dashboard Africa's Light</h2>
+
+<div id="liste">Chargement...</div>
+
+</div>
+
+<script>
+
+const API = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec?action=list";
+
+fetch(API)
+.then(res => res.json())
+.then(data => {
+
+  let html = "";
+
+  data.reverse().forEach(m => {
+    html += `
+      <div class="card">
+        <b>${m.nom}</b><br>
+        📞 ${m.telephone}<br>
+        📧 ${m.email}<br>
+        🏢 ${m.commission}<br>
+        📅 ${m.date}
+      </div>
+    `;
+  });
+
+  document.getElementById("liste").innerHTML = html;
+
+});
+
+</script>
+
+</body>
+</html>

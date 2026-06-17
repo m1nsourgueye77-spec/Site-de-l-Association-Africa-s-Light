@@ -1,217 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<title>Africa's Light Association</title>
-
-
-</head>
-<body id="haut">
-
-<header>
-<div class="logo">
-<img src="images/Logo Africa's Light.png" alt="Africa's Light Logo">
-<h2>Africa's Light</h2>
-</div>
-
-
-<nav>
-<ul>
-<li><a href="index.html">Accueil</a></li>
-<li><a href="bureau.html">Bureau</a></li>
-<li><a href="apropos.html">À propos</a></li>
-<li><a href="projets.html">Projets</a></li>
-<li><a href="commissions.html">Commissions</a></li>
-<li><a href="actualites.html">Actualités</a></li>
-<li><a href="galerie.html">Galerie</a></li>
-<li><a href="adhesion.html">Adhésion</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
-</header>
-
-
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Africa's Light Association</h1>
-<p>
-Ensemble pour une citoyenneté active,
-une solidarité durable et un développement
-au service des communautés.
-</p>
-
-<a href="#adhesion" class="btn">
-Adhérer Maintenant
-</a>
-
-</div>
-
-</section>
-
-
-
-
-
-
-
-<section class="section">
-
-<h2 class="section-title">
-Notre Communauté
-</h2>
-
-<div class="card" style="text-align:center; max-width:400px; margin:auto;">
-
-<h1 id="compteur">
-0
-</h1>
-
-<p>Membres engagés</p>
-
-</div>
-
-</section>
-
-
-
-<section class="section">
-
-<h2 class="section-title">
-Nos Activités
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Communication</h3>
-<p>Gestion de l'image et des réseaux sociaux.</p>
-</div>
-
-<div class="card">
-<h3>Organisation</h3>
-<p>Coordination des activités et événements.</p>
-</div>
-<div class="card">
-<h3>Finances</h3>
-<p>Gestion financière et partenariats.</p>
-</div>
-<div class="card">
-<h3>Mobilisation</h3>
-<p>Adhésion et engagement citoyen.</p>
-</div>
-</div>
-
-</section>
-
-
-
-<section class="section" id="galerie">
-
-<h2 class="section-title">
-📸 Galerie Photos & Vidéos
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="images/photo1.jpg"
-alt="Action solidaire"
-style="width:100%;border-radius:10px;">
-
-<h3>Action Solidaire</h3>
-<p>Distribution de dons aux familles vulnérables.</p>
-</div>
-
-<div class="card">
-<img src="images/photo2.jpg"
-alt="Journée de réflexion"
-style="width:100%;border-radius:10px;">
-
-<h3>Journée de Réflexion</h3>
-<p>Échanges et sensibilisation citoyenne.</p>
-</div>
-
-<div class="card">
-<img src="images/photo3.jpg"
-alt="Journée Portes Ouvertes"
-style="width:100%;border-radius:10px;">
-
-<h3>Journée Portes Ouvertes</h3>
-<p>Présentation officielle d'Africa's Light Association.</p>
-</div>
-
-</div>
-
-<br><br>
-
-<h3 style="text-align:center;color:#0D6678;">
-🎥 Vidéos de l'Association
-</h3>
-
-<div class="cards">
-
-<div class="card">
-
-<video
-controls
-width="100%"
-poster="images/video-cover1.jpg">
-
-<source
-src="documents/video1.mp4"
-type="video/mp4">
-
-Votre navigateur ne supporte pas la vidéo.
-
-</video>
-
-<p style="margin-top:15px;">
-Présentation des activités de l'association.
-</p>
-
-</div>
-
-<div class="card">
-
-<video
-controls
-width="100%"
-poster="images/video-cover2.jpg">
-
-<source
-src="documents/video2.mp4"
-type="video/mp4">
-
-Votre navigateur ne supporte pas la vidéo.
-
-</video>
-
-<p style="margin-top:15px;">
-Messages et témoignages des membres.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-<section class="section" id="adhesion">
-<h2 class="section-title">
-Adhérer à l'Association
-</h2>
-<div class="form-box">
-
-
 <form id="adhesionForm">
 
   <input type="text" id="nom" placeholder="Nom et prénom" required>
@@ -220,229 +6,71 @@ Adhérer à l'Association
 
   <input type="email" id="email" placeholder="Adresse email">
 
-  <select id="commission">
+  <select id="commission" required>
     <option value="">Choisir une commission</option>
-    <option value="Communication">Commission Communication</option>
-    <option value="Organisation">Commission Organisation</option>
-    <option value="Finances">Commission Finances</option>
-    <option value="Mobilisation">Commission Mobilisation</option>
+    <option value="Communication">Communication</option>
+    <option value="Organisation">Organisation</option>
+    <option value="Finances">Finances</option>
+    <option value="Mobilisation">Mobilisation</option>
   </select>
 
   <button type="submit">Envoyer la demande</button>
 
 </form>
 
-<div id="message" style="text-align:center;margin-top:10px;font-weight:bold;"></div>
-
-</div>
-
-</section>
-
-
-
-<section class="section">
-<div class="card"
-style="
-max-width:700px;
-margin:auto;
-text-align:center;
-background:#25D366;
-color:white;
-">
-
-<h2>
-💬 Nous contacter sur WhatsApp
-</h2>
-<br>
-<p>
-Pour toute information concernant nos activités,
-les adhésions ou les dons.
-</p>
-<br>
-<a
-href="https://wa.me/221764737729"
-target="_blank"
-style="
-background:white;
-color:#25D366;
-padding:15px 30px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-display:inline-block;
-">
-
-Écrire sur WhatsApp
-
-</a>
-
-</div>
-
-</section>
-
-
-
-
-<section class="section" id="don-wave">
-  <h2 class="section-title">❤️ Soutenir Africa's Light</h2>
-
-  <div class="card" style="max-width:500px;margin:auto;text-align:center;">
-    <h3>Faire un don via Wave</h3>
-
-    <p>
-      Scannez ce QR code pour soutenir les actions d'Africa's Light Association.
-    </p>
-
-    <img src="QR Wave Africa Light.png"
-     alt="QR Code Wave Africa's Light"
-     style="width:250px;max-width:100%;display:block;margin:20px auto;">
-
-    <p style="font-size:14px;color:#555;">
-      Merci pour votre soutien ❤️
-    </p>
-  </div>
-</section>
-
-
-<section id="actualites" style="max-width:900px;margin:auto;padding:20px;font-family:Arial;">
-
-<h2 style="text-align:center;">Actualités Africa's Light</h2>
-
-<div id="news-container">Chargement...</div>
-
-</section>
-
-<input type="password" id="pass" placeholder="Mot de passe">
-<button onclick="login()">Connexion</button>
+<div id="message"></div>
 
 
 
 <script>
-const ADMIN_PASS = "Africa123";
+window.addEventListener("DOMContentLoaded", function () {
 
-const API_URL = "https://script.google.com/macros/s/AKfycbzywnpiZyMMubr0_Zz1iyg9t9Z5DFXdg6eKw4vFXPZHD9Trh9v9AfqCmUWcM4D1r7dj/exec";
+  const API_ADHESION = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
 
-fetch(API_URL)
-  .then(res => res.text())
-  .then(text => {
-    const data = JSON.parse(text);
+  document.getElementById("adhesionForm").addEventListener("submit", function(e){
+    e.preventDefault();
 
-    if (!Array.isArray(data)) throw new Error("API invalide");
+    const data = {
+      nom: document.getElementById("nom").value,
+      telephone: document.getElementById("telephone").value,
+      email: document.getElementById("email").value,
+      commission: document.getElementById("commission").value
+    };
 
-    let html = "";
+    console.log("DATA ENVOYÉE:", data);
 
-    data.reverse().forEach(item => {
-      html += `
-        <div style="border:1px solid #ddd;padding:15px;margin:10px 0;border-radius:10px;">
-          <h3 style="color:#1a6f5a;">${item.titre || ""}</h3>
-          <small>${item.date || ""}</small>
-          <p>${item.contenu || ""}</p>
-        </div>
-      `;
-    });
+   fetch(API_ADHESION, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data)
+})
+.then(res => res.text())
+.then(text => {
+  console.log("Réponse API:", text);
 
-    document.getElementById("news-container").innerHTML = html;
-  })
-  .catch(err => {
-    console.error(err);
-    document.getElementById("news-container").innerHTML =
-      "⚠️ Erreur de chargement des actualités";
-  });
-</script>
-
-<script>
-function login(){
-  const pass = document.getElementById("pass").value;
-
-  if(pass === "Africa123"){
-    alert("Accès autorisé");
-    document.getElementById("news-container").style.display = "block";
-  } else {
-    alert("Mot de passe incorrect");
-  }
-}
-</script>
-
-<script>
-const API_ADHESION = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
-
-document.getElementById("adhesionForm").addEventListener("submit", function(e){
-  e.preventDefault();
-
-  const data = {
-    nom: document.getElementById("nom").value,
-    telephone: document.getElementById("telephone").value,
-    email: document.getElementById("email").value,
-    commission: document.getElementById("commission").value
-  };
-
-  console.log("ADHÉSION:", data);
-
-  fetch(API_ADHESION, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  })
-  .then(text => {
   try {
-    const data = JSON.parse(text);
+    const response = JSON.parse(text);
 
-    if (!Array.isArray(data)) throw new Error("API invalide");
+    document.getElementById("message").innerHTML =
+      "✅ Demande envoyée avec succès !";
 
-    let html = "";
-
-    data.reverse().forEach(item => {
-      html += `
-        <div style="border:1px solid #ddd;padding:15px;margin:10px 0;border-radius:10px;">
-          <h3 style="color:#1a6f5a;">${item.titre || ""}</h3>
-          <small>${item.date || ""}</small>
-          <p>${item.contenu || ""}</p>
-        </div>
-      `;
-    });
-
-    document.getElementById("news-container").innerHTML = html;
+    document.getElementById("adhesionForm").reset();
 
   } catch (e) {
-    console.error(e);
-    document.getElementById("news-container").innerHTML =
-      "⚠️ API invalide ou erreur serveur";
+    console.error("Erreur JSON:", e);
+    document.getElementById("message").innerHTML =
+      "⚠️ Réponse invalide serveur";
   }
 })
+.catch(err => {
+  console.error(err);
+  document.getElementById("message").innerHTML =
+    "❌ Erreur d'envoi";
+});
+
+  });
+
+});
 </script>
-
-
-<footer>
-<h3>Africa's Light Association</h3>
-<p>
-Ensemble pour une citoyenneté active
-et un développement solidaire.</p>
-
-<br>
-<h3>E-MAIL</h3>
-<p>📧 <a href="mailto:africaslightassociation@gmail.com">
-africaslightassociation@gmail.com
-</a></p>
-
-<br>
-<h3>Nos Contacts</h3>
-<p>📱 76 473 77 29</p>
-<p>📱 780194442</p>
-<p>📱 785255300</p>
-<p>📱 711263183</p>
-
-<br>
-<p>
-© 2026 Africa's Light Association
-</p>
-<p>
-Site conçu et développé par
-<strong>Mansour Gueye - Gi.Code</strong>
-</p>
-</footer>
-
-
-</body>
-</html>

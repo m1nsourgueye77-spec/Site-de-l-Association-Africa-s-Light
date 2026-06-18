@@ -75,7 +75,6 @@ document.getElementById("actus").innerHTML = html;
 
 
 
-let nombre = 0;
 
 const compteur =
 document.getElementById("compteur");
@@ -93,8 +92,6 @@ clearInterval(timer);
 }, 30);
 
 
-
-const actus = [
 
 "🌟 Journée Portes Ouvertes - 11 juillet 2026",
 "❤️ Appel aux dons pour les enfants vulnérables",

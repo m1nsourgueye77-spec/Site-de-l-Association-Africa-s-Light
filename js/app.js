@@ -1,9 +1,11 @@
 window.addEventListener("DOMContentLoaded", function () {
+
   const form = document.getElementById("adhesionForm");
 
   if (form) {
 
-    const API_ADHESION = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
+    const API_ADHESION =
+      "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -25,6 +27,8 @@ window.addEventListener("DOMContentLoaded", function () {
       .then(res => res.text())
       .then(text => {
 
+        console.log(text);
+
         document.getElementById("message").innerHTML =
           "✅ Demande envoyée avec succès !";
 
@@ -32,6 +36,7 @@ window.addEventListener("DOMContentLoaded", function () {
       })
       .catch(err => {
         console.error(err);
+
         document.getElementById("message").innerHTML =
           "❌ Erreur d'envoi. Réessayez.";
       });

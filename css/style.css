@@ -232,3 +232,40 @@ html{
   display: none;
 }
 
+
+.menu-toggle{
+  display:none;
+  font-size:30px;
+  color:white;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  nav{
+    display:none;
+    width:100%;
+    background:var(--blue);
+    position:absolute;
+    top:100%;
+    left:0;
+  }
+
+  nav.active{
+    display:block;
+  }
+
+  nav ul{
+    flex-direction:column;
+    padding:20px;
+  }
+
+  nav ul li{
+    margin:15px 0;
+  }
+}
+

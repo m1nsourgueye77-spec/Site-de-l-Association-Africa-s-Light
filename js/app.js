@@ -41,6 +41,16 @@ window.addEventListener("DOMContentLoaded", function () {
           "❌ Erreur d'envoi. Réessayez.";
       });
 
+
+      const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+}
+
     });
   }
 });

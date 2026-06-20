@@ -1,5 +1,16 @@
 window.addEventListener("DOMContentLoaded", function () {
 
+  // MENU MOBILE
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("nav");
+
+  if (menuToggle && nav) {
+    menuToggle.addEventListener("click", function () {
+      nav.classList.toggle("active");
+    });
+  }
+
+  // FORMULAIRE D'ADHÉSION
   const form = document.getElementById("adhesionForm");
 
   if (form) {
@@ -26,7 +37,6 @@ window.addEventListener("DOMContentLoaded", function () {
       })
       .then(res => res.text())
       .then(text => {
-
         console.log(text);
 
         document.getElementById("message").innerHTML =
@@ -40,23 +50,7 @@ window.addEventListener("DOMContentLoaded", function () {
         document.getElementById("message").innerHTML =
           "❌ Erreur d'envoi. Réessayez.";
       });
-
-
-      const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
-
-if (menuToggle && nav) {
-  menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-}
-
     });
   }
-});
 
-
-menuToggle.addEventListener("click", () => {
-  console.log("Menu cliqué");
-  nav.classList.toggle("active");
 });

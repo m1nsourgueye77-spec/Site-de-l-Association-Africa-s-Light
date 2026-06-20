@@ -54,3 +54,9 @@ if (menuToggle && nav) {
     });
   }
 });
+
+
+menuToggle.addEventListener("click", () => {
+  console.log("Menu cliqué");
+  nav.classList.toggle("active");
+});

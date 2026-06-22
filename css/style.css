@@ -1,10 +1,10 @@
 
 :root{
---gold:#E0A11B;
---blue:#0D6678;
---green:#4B9445;
---white:#ffffff;
---dark:#222;
+  --gold:#F4C542;       /* Jaune principal */
+  --blue:#008C99;       /* Bleu turquoise secondaire */
+  --green:#10B981;      /* Vert accent */
+  --white:#ffffff;
+  --dark:#1E293B;
 }
 
 *{
@@ -15,7 +15,8 @@ font-family:'Segoe UI',sans-serif;
 }
 
 body{
-background:#f7f7f7;
+  background: #F8FAFC;
+  color: var(--dark);
 }
 
 /* HEADER */
@@ -40,6 +41,7 @@ gap:10px;
 
 .logo img{
   height:70px;
+  border-radius:50%;
 }
 
 .logo h2{
@@ -66,6 +68,7 @@ nav ul li a{
 
 nav ul li a:hover{
   color:var(--gold);
+    text-shadow:0 0 8px rgba(244,197,66,0.6);
 }
 
 /* HERO */
@@ -96,6 +99,8 @@ color:white;
 .hero h1{
 font-size:60px;
 margin-bottom:20px;
+color:var(--gold);
+text-shadow:2px 2px 8px rgba(0,0,0,.5);
 }
 
 .hero p{
@@ -105,19 +110,23 @@ margin-bottom:30px;
 
 .btn{
   background:var(--gold);
-  color:white;
+  color:var(--dark);
   padding:15px 35px;
   text-decoration:none;
   border-radius:50px;
   font-weight:bold;
   display:inline-block;
-  transition:0.3s;
+  transition:all .3s ease;
 }
 
 .btn:hover{
-  background:var(--green);
-  transform:translateY(-3px);
+  background:var(--blue);
+   color:white;
+   transform:translateY(-3px);
+  box-shadow:0 6px 15px rgba(0,140,153,.35);
 }
+
+
 
 .card{
   border-top:5px solid var(--gold);
@@ -130,9 +139,9 @@ padding:70px 10%;
 }
 
 .section-title{
-text-align:center;
-margin-bottom:40px;
-color:var(--blue);
+  text-align:center;
+  margin-bottom:40px;
+  color:var(--gold);
 }
 
 /* CARDS */
@@ -148,11 +157,14 @@ gap:25px;
   padding:25px;
   border-radius:12px;
   box-shadow:0 3px 12px rgba(0,0,0,.1);
+  border-top:5px solid var(--gold);
   transition:0.4s;
 }
 
 .card:hover{
   transform:translateY(-10px);
+  border-top-color:var(--blue);
+ box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 .card h3{
@@ -184,12 +196,16 @@ border-radius:8px;
 .form-box button{
 width:100%;
 padding:15px;
-background:var(--green);
+background:var(--blue);
 color:white;
 border:none;
 border-radius:8px;
 cursor:pointer;
 font-size:18px;
+}
+
+.form-box button:hover{
+  background:var(--green);
 }
 
 /* FOOTER */
@@ -268,4 +284,3 @@ html{
     margin:15px 0;
   }
 }
-

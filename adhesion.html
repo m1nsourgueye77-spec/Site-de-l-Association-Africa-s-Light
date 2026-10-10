@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adhésion - Africa's Light Association</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <section class="section" id="adhesion">
+    <h2 class="section-title">
+      Adhérer à l'Association
+    </h2>
+    <div class="form-box">
+<form id="adhesionForm">
+
+  <input type="text" id="nom" placeholder="Nom et prénom" required>
+
+  <input type="tel" id="telephone" placeholder="Téléphone" required>
+
+  <input type="email" id="email" placeholder="Adresse email">
+
+  <select id="commission" required>
+    <option value="">Choisir une commission</option>
+    <option value="Communication">Communication</option>
+    <option value="Organisation">Organisation</option>
+    <option value="Finances">Finances</option>
+    <option value="Mobilisation">Mobilisation</option>
+  </select>
+
+  <button type="submit">Envoyer la demande</button>
+
+</form>
+
+<div id="message"></div>
+    </div>
+
+  </section>
+
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+
+  const API_ADHESION = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
+
+  document.getElementById("adhesionForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const data = {
+      nom: document.getElementById("nom").value,
+      telephone: document.getElementById("telephone").value,
+      email: document.getElementById("email").value,
+      commission: document.getElementById("commission").value
+    };
+
+    console.log("DATA ENVOYÉE:", data);
+
+   fetch(API_ADHESION, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data)
+})
+.then(res => res.text())
+.then(text => {
+  console.log("Réponse API:", text);
+
+  try {
+    const response = JSON.parse(text);
+
+    document.getElementById("message").innerHTML =
+      "✅ Demande envoyée avec succès !";
+
+    document.getElementById("adhesionForm").reset();
+
+  } catch (e) {
+    console.error("Erreur JSON:", e);
+    document.getElementById("message").innerHTML =
+      "⚠️ Réponse invalide serveur";
+  }
+})
+.catch(err => {
+  console.error(err);
+  document.getElementById("message").innerHTML =
+    "❌ Erreur d'envoi";
+});
+
+  });
+
+});
+</script>
+   <script src="js/app.js"></script>
+  </body>
+</html>

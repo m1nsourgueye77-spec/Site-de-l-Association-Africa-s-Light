@@ -6,562 +6,311 @@
 <link rel="stylesheet" href="css/style.css">
 <title>Africa's Light Association</title>
 
-<style>
-  
-:root{
---gold:#E0A11B;
---blue:#0D6678;
---green:#4B9445;
---white:#ffffff;
---dark:#222;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-}
-
-body{
-background:#f7f7f7;
-}
-
-/* HEADER */
-
-header{
-  background:var(--blue);
-  padding:15px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  box-shadow:0 3px 10px rgba(0,0,0,.15);
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-  height:70px;
-}
-
-.logo h2{
-  color:var(--white);
-  font-size:28px;
-  margin-left:12px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-}
-
-nav ul li{
-margin-left:20px;
-}
-
-nav ul li a{
-  text-decoration:none;
-  color:white;
-  font-weight:600;
-  transition:0.3s;
-}
-
-nav ul li a:hover{
-  color:var(--gold);
-}
-
-/* HERO */
-
-.hero{
-height:80vh;
-background:linear-gradient(
-rgba(0,0,0,.65),
-rgba(0,0,0,.65)
-),
-url("images/afrique.jpg");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content{
-max-width:900px;
-color:white;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.btn{
-  background:var(--gold);
-  color:white;
-  padding:15px 35px;
-  text-decoration:none;
-  border-radius:50px;
-  font-weight:bold;
-  display:inline-block;
-  transition:0.3s;
-}
-
-.btn:hover{
-  background:var(--green);
-  transform:translateY(-3px);
-}
-
-.card{
-  border-top:5px solid var(--gold);
-}
-
-/* SECTION */
-
-.section{
-padding:70px 10%;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:40px;
-color:var(--blue);
-}
-
-/* CARDS */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 3px 12px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-color:var(--green);
-margin-bottom:10px;
-}
-
-/* FORMULAIRE */
-
-.form-box{
-background:white;
-padding:30px;
-max-width:600px;
-margin:auto;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-.form-box input,
-.form-box select{
-width:100%;
-padding:15px;
-margin-bottom:15px;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-.form-box button{
-width:100%;
-padding:15px;
-background:var(--green);
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-size:18px;
-}
-
-/* FOOTER */
-
-footer{
-  background:var(--blue);
-  color:white;
-  text-align:center;
-  padding:40px;
-}
-
-footer a{
-color:var(--gold);
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-nav{
-display:none;
-}
-
-.hero h1{
-font-size:35px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-
-
-html{
-    scroll-behavior: smooth;
-}
-
-#news-container {
-  display: none;
-}
-
-
-</style>
-
 </head>
 <body id="haut">
 
-<!-- HEADER -->
 <header>
-  <div class="logo">
-    <img src="images\Africa's light logo.png" alt="Logo Africa's Light">
-    <h2>Africa's Light</h2>
-  </div>
+<div class="logo">
+<img src="Africa's light logo.png" alt="Africa's Light Logo">
+<h2>Africa's Light</h2>
+</div>
 
-  <nav>
-    <ul>
-      <li><a href="#haut">Accueil</a></li>
-      <li><a href="bureau.html">Bureau</a></li>
-      <li><a href="apropos.html">À propos</a></li>
-      <li><a href="#commissions">Commissions</a></li>
-      <li><a href="#activites">Activités</a></li>
-      <li><a href="#galerie-photos">Galerie</a></li>
-      <li><a href="#actualites">Actualités</a></li>
-      <li><a href="#adhesion">Adhésion</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="menu-toggle">☰</div>
+
+
+<nav>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="bureau.html">Bureau</a></li>
+<li><a href="apropos.html">À propos</a></li>
+<li><a href="projets.html">Projets</a></li>
+<li><a href="commissions.html">Commissions</a></li>
+<li><a href="actualites.html">Actualités</a></li>
+<li><a href="galerie.html">Galerie</a></li>
+<li><a href="adhesion.html">Adhésion</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
-    <h1>Africa's Light Association</h1>
+<div class="hero-content">
+<h1>Africa's Light Association</h1>
+<p>
+Ensemble pour une citoyenneté active,
+une solidarité durable et un développement
+au service des communautés.
+</p>
 
-    <p>
-      Ensemble pour une citoyenneté active,
-      une solidarité durable et un développement
-      au service des communautés.
-    </p>
+<a href="#adhesion" class="btn">
+Adhérer Maintenant
+</a>
+</div>
 
-    <a href="#adhesion" class="btn">
-      Adhérer Maintenant
-    </a>
+</section>
+
+
+  <section class="section">
+  <h2 class="section-title">Notre Impact</h2>
+  <div class="cards">
+    <div class="card" style="text-align:center;">
+      <h1 id="dons">0 FCFA</h1>
+      <p>❤️ Dons collectés</p>
+    </div>
+    
+
+    <div class="card" style="text-align:center;">
+      <h1 id="projets">0</h1>
+      <p>🎯 Projets réalisés</p>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <h1 id="enfants">0</h1>
+      <p>🎓 Enfants accompagnés</p>
+    </div>
+
   </div>
 </section>
 
-<!-- ÉVÉNEMENT À LA UNE -->
-<section class="section evenement">
-  <h2 class="section-title">
-    🌟 Journée Portes Ouvertes & Appel aux Dons
-  </h2>
-
-  <p>
-    Samedi 11 juillet 2026 au CDEPS de Petit Mbao.
-  </p>
-
-  <a href="actualites.html" class="btn">
-    Participer
-  </a>
-
-  <a href="#dons" class="btn">
-    Faire un don
-  </a>
+  
+<section class="section">
+<h2 class="section-title">
+Notre Communauté
+</h2>
+<div class="card" style="text-align:center; max-width:400px; margin:auto;">
+<h1 id="compteur">
+60
+</h1>
+<p>Membres engagés</p>
+</div>
 </section>
 
-<!-- PRÉSENTATION -->
-<section class="section presentation">
-  <h2 class="section-title">
-    Qui sommes-nous ?
-  </h2>
 
-  <p>
-    Africa's Light est une organisation engagée
-    pour la solidarité, l'éducation et
-    l'accompagnement des enfants vulnérables.
-  </p>
 
-  <h3>Notre Vision</h3>
-
-  <p>
-    Construire une société plus juste où chaque
-    enfant peut grandir dans la dignité.
-  </p>
-</section>
-
-<!-- NOTRE COMMUNAUTÉ -->
 <section class="section">
   <h2 class="section-title">
-    Notre Communauté
+Documents 
   </h2>
-
-  <div class="card" style="text-align:center;">
-    <h1 id="compteur">0</h1>
-    <p>Membres engagés</p>
-  </div>
-</section>
-
-<!-- NOS COMMISSIONS -->
-<section class="section" id="commissions">
-  <h2 class="section-title">
-    Nos Commissions
-  </h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Communication</h3>
-      <p>Image et réseaux sociaux.</p>
-    </div>
-
-    <div class="card">
-      <h3>Organisation</h3>
-      <p>Coordination des activités.</p>
-    </div>
-
-    <div class="card">
-      <h3>Finances</h3>
-      <p>Gestion financière.</p>
-    </div>
-
-    <div class="card">
-      <h3>Mobilisation</h3>
-      <p>Adhésion et engagement citoyen.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- NOS ACTIVITÉS -->
-<section class="section" id="activites">
-  <h2 class="section-title">
-    Nos Activités
-  </h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Dons solidaires</h3>
-    </div>
-
-    <div class="card">
-      <h3>Sensibilisation</h3>
-    </div>
-
-    <div class="card">
-      <h3>Actions citoyennes</h3>
-    </div>
-
-  </div>
-</section>
-
-<!-- GALERIE PHOTOS -->
-<section class="section" id="galerie-photos">
-  <h2 class="section-title">
-    📸 Presidents de Commissions
-  </h2>
-
-  <div class="cards">
-    <img src="images/Cheikh Tidiane Sane Fondateur et President Africa's Light - Copie.jpeg" width="300">
-    <img src="images/Cécile Seck Vice Président Africa's Light.jpeg" alt="" width="300">
-    <img src="images/Fousseynou Wague Adjoint Secretaire General.jpeg" alt="" width="300">
+    <div class="card" style="text-align: center; max-width: 400px; margin: auto;">
+  
+<p class="pdf-download">
+    ⬇️ <a href="TDR-DE-LA-1ERE-EDITION-DE-LASSOCIATION.pdf" target="_blank">Télécharger le document PDF</a>
+  </p>
   </div>
 </section>
 
 
-<section class="section" id="galerie-photos">
-  <h2 class="section-title">
-    📸 Membres
-  </h2>
-
-  <div class="cards">
-    <img src="membres/Sokhna Mame Diarra Ndiaye Tresoriere Generale.jpeg" width="300">
-    <img src="membres/Bella Woury Diallo President Cellule Communication.jpeg" alt="" width="300">
-    <img src="membres/Adjoint Présidente Comm féminine Sociale.jpeg" alt="" width="300">
-  </div>
-  </section>
-
-
-<!-- GALERIE VIDÉOS -->
 <section class="section">
-  <h2 class="section-title">
-    🎥 Déclarations du Président
-  </h2>
+<h2 class="section-title">
+Nos Activités
+</h2>
+<div class="cards">
+<div class="card">
+<h3>Communication</h3>
+<p>Gestion de l'image et des réseaux sociaux.</p>
+</div>
+<div class="card">
+<h3>Organisation</h3>
+<p>Coordination des activités et événements.</p>
+</div>
+<div class="card">
+<h3>Finances</h3>
+<p>Gestion financière et partenariats.</p>
+</div>
+<div class="card">
+<h3>Mobilisation</h3>
+<p>Adhésion et engagement citoyen.</p>
+</div>
+</div>
 
-  <video controls width="100%">
-    <source src="Declarations du Président Africa's Light.mp4">
-  </video>
-  <p style="margin-top:15px;">
-Messages et témoignages des membres.
+</section>
+  
+
+<section class="section" id="galerie">
+  
+<h2 class="section-title">
+📸 Galerie de lAssociation
+</h2>
+<div class="cards">
+
+<div class="card">
+<img src="Remise de dons a Pout.jpeg"
+alt="Action solidaire"
+style="width:100%;border-radius:10px;">
+<h3>Action Solidaire</h3>
+<p>Distribution de dons aux familles vulnérables.</p>
+</div>
+
+
+
+<div class="card">
+<img src="Flyer Journée Porte Ouverte.jpeg"
+alt="Journée Portes Ouvertes"
+style="width:100%;border-radius:10px;">
+<h3>Journée Portes Ouvertes</h3>
+<p>Présentation officielle d'Africa's Light Association.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<video width="400" controls>
+<source src="Africa Light Vidéo 1.mp4" type="video/mp4">
+</video>
+
+<video width="400" controls>
+<source src="Vidéo Journée de réflexion2.mp4" type="video/mp4">
+</video>
+
+
+
+
 </section>
 
-<!-- ACTUALITÉS -->
-<section class="section" id="actualites">
-  <h2 class="section-title">
-    📰 Actualités
-  </h2>
-<div id="news-container"></div>
-  <div class="card">
-    <h3>Journée Portes Ouvertes</h3>
 
-    <p>
-      Découvrez notre événement solidaire.
-    </p>
 
-    <a href="actualites.html" class="btn">
-      Lire plus
-    </a>
-  </div>
-</section>
 
-<!-- ADHÉSION -->
 <section class="section" id="adhesion">
-  <h2 class="section-title">
-    Adhérer à l'Association
-  </h2>
+<h2 class="section-title">
+Adhérer à l'Association
+</h2>
+<div class="form-box">
+  
+<form id="adhesionForm">
+  <input type="text" id="nom" placeholder="Nom et prénom" required>
+  <input type="tel" id="telephone" placeholder="Téléphone" required>
+  <input type="email" id="email" placeholder="Adresse email">
 
-  <div class="form-box">
+  <select id="commission">
+    <option value="">Choisir une commission</option>
+    <option value="Communication">Commission Communication</option>
+    <option value="Organisation">Commission Organisation</option>
+    <option value="Finances">Commission Finances</option>
+    <option value="Mobilisation">Commission Mobilisation</option>
+  </select>
+  <button type="submit">Envoyer la demande</button>
+  
+</form>
+<div id="message" style="text-align:center;margin-top:10px;font-weight:bold;"></div>
+</div>
+</section>
 
-    <form id="adhesionForm">
 
-      <input type="text" id="nom" placeholder="Nom et prénom" required>
 
-<input type="tel" id="telephone" placeholder="Téléphone" required>
+<section class="section">
+<div class="card"
+style="
+max-width:700px;
+margin:auto;
+text-align:center;
+background:#25D366;
+color:white;
+">
+<h2>
+💬 Nous contacter sur WhatsApp
+</h2>
+<br>
+<p>
+Pour toute information concernant nos activités,
+les adhésions ou les dons.
+</p>
+<br>
+<a
+href="https://wa.me/221780194442?text=Bonjour%20Gi.Code,%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services."
+target="_blank"
+style="
+background:white;
+color:#25D366;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+display:inline-block;
+">
+Écrire sur WhatsApp
+</a>
+</div>
+</section>
+  
 
-<input type="email" id="email" placeholder="Adresse email">
+<section class="section" id="don-wave">
+  <h2 class="section-title">❤️ Soutenir Africa's Light</h2>
+  <div class="card" style="max-width:500px;margin:auto;text-align:center;">
+    <h3>Faire un don via Wave</h3>
+    <p>
+      Scannez ce QR code pour soutenir les actions d'Africa's Light Association.
+    </p>
+    <img src="QR Wave Africa Light.png"
+     alt="QR Code Wave Africa's Light"
+     style="width:250px;max-width:100%;display:block;margin:20px auto;">
 
-<select id="commission" required>
-  <option value="">Choisir une commission</option>
-  <option>Communication</option>
-  <option>Organisation</option>
-  <option>Finances</option>
-  <option>Mobilisation</option>
-</select>
-
-      <button type="submit">
-        Envoyer la demande
-      </button>
-
-    </form>
-
+    <p style="font-size:14px;color:#555;">
+      Merci pour votre soutien ❤️
+    </p>
   </div>
 </section>
 
-<!-- CONTACT WHATSAPP -->
-<section class="section" id="contact">
-  <h2 class="section-title">
-    💬 Nous contacter sur WhatsApp
-  </h2>
 
-  <a
-    href="https://wa.me/221764737729"
-    target="_blank"
-    class="btn">
-    Écrire sur WhatsApp
-  </a>
+<section id="actualites" style="max-width:900px;margin:auto;padding:20px;font-family:Arial;">
+<h2 style="text-align:center;">Actualités Africa's Light</h2>
+<div id="news-container">Chargement...</div>
 </section>
 
-<!-- DONS WAVE -->
-<section class="section" id="dons">
-  <h2 class="section-title">
-    ❤️ Soutenir Africa's Light
-  </h2>
-
-  <p>
-    Faire un don via Wave
-  </p>
-
-  <img
-    src="QR Wave Africa Light.png"
-    alt="QR Code Wave"
-    width="250">
-
-  <p>
-    Merci pour votre soutien ❤️
-  </p>
-</section>
-
-<!-- FOOTER -->
-<footer>
-
-  <h3>Africa's Light Association</h3>
-
-  <p>📧 africaslightassociation@gmail.com</p>
-
-  <p>📱 76 473 77 29</p>
-  <p>📱 78 019 44 42</p>
-  <p>📱 78 525 53 00</p>
-  <p>📱 71 126 31 83</p>
-
-  <p>📍 Petit Mbao - Sénégal</p>
-
-  <p>
-    Hope for Every Child ❤️✨
-  </p>
-
-  <p>
-    Site conçu et développé par
-    <strong>Mansour Gueye - Gi.Code</strong>
-  </p>
-
-</footer>
 
 <script>
-// Compteur animé
-let compteur = document.getElementById("compteur");
-let nombre = 0;
+const ADMIN_PASS = "Africa123";
 
-const interval = setInterval(() => {
-  nombre++;
-  compteur.textContent = nombre;
+fetch(API_URL)
+  .then(res => res.json())
+  .then(data => {
 
-  if (nombre >= 100) {
-    clearInterval(interval);
+    if (!Array.isArray(data)) throw new Error("API invalide");
+
+    let html = "";
+
+    data.reverse().forEach(item => {
+      html += `
+        <div style="border:1px solid #ddd;padding:15px;margin:10px 0;border-radius:10px;">
+          <h3 style="color:#1a6f5a;">${item.titre || ""}</h3>
+          <small>${item.date || ""}</small>
+          <p>${item.contenu || ""}</p>
+        </div>
+      `;
+    });
+
+    document.getElementById("news-container").innerHTML = html;
+
+  })
+  .catch(err => {
+    console.error(err);
+    document.getElementById("news-container").innerHTML =
+      "⚠️ Erreur de chargement des actualités";
+  });
+  
+  
+function login(){
+  const pass = document.getElementById("pass").value;
+
+  if(pass.trim() === ""){
+    alert("Entrer un mot de passe");
+    return;
   }
-}, 30);
 
-// URL de l'API d'adhésion
+  if(pass === ADMIN_PASS){
+    alert("Accès autorisé");
+    document.getElementById("news-container").style.display = "block";
+  } else {
+    alert("Mot de passe incorrect");
+  }
+}
+
+
+
 const API_ADHESION = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
 
-// Gestion du formulaire
-const form = document.getElementById("adhesionForm");
-
-form.addEventListener("submit", function (e) {
+document.getElementById("adhesionForm").addEventListener("submit", function(e){
   e.preventDefault();
 
   const data = {
@@ -579,16 +328,92 @@ form.addEventListener("submit", function (e) {
     body: JSON.stringify(data)
   })
   .then(res => res.text())
-  .then(() => {
-    alert("Votre demande d'adhésion a été envoyée !");
-    form.reset();
+  .then(response => {
+    console.log("Réponse API:", response);
+
+    document.getElementById("message").innerHTML =
+      "✅ Demande envoyée avec succès !";
+
+    document.getElementById("adhesionForm").reset();
   })
   .catch(err => {
     console.error(err);
-    alert("Erreur lors de l'envoi.");
+    document.getElementById("message").innerHTML =
+      "❌ Erreur d'envoi, réessayez.";
   });
+
 });
+
+
+  let compteur = 0;
+setInterval(() => {
+  if(compteur < 150){ // exemple
+    compteur++;
+    document.getElementById("compteur").innerText = compteur;
+  }
+}, 50);
+
+  document.querySelector(".menu-toggle")
+.addEventListener("click", () => {
+  document.querySelector("nav")
+  .classList.toggle("active");
+});
+
+
+  function compteur(id, fin) {
+  let n = 0;
+  const el = document.getElementById(id);
+
+  const timer = setInterval(() => {
+    n++;
+    el.textContent = n;
+
+    if (n >= fin) {
+      clearInterval(timer);
+    }
+  }, 30);
+}
+
+compteur("membres", 150);
+compteur("projets", 12);
+compteur("enfants", 250);
+
+  
 </script>
 
-<script src="js/app.js"></script>
+
+<footer>
+<h3>Africa's Light Association</h3>
+<p>
+Ensemble pour une citoyenneté active
+et un développement solidaire.</p>
+
+<br>
+<h3>E-MAIL</h3>
+<p>📧 <a href="mailto:africaslightassociation@gmail.com">
+africaslightassociation@gmail.com
+  📍 Dakar - Sénégal
+</a></p>
+
+<br>
+<h3>Nos Contacts</h3>
+<p>📱 76 473 77 29</p>
+<p>📱 780194442</p>
+
+<br>
+<p>
+© 2026 Africa's Light Association
+</p>
+<p>
+Site conçu et développé par
+<strong>Mansour Gueye - Gi.Code</strong>
+</p>
+</footer>
+
+<script>
+document.getElementById("dons").textContent = "1 250 000 FCFA";
+</script>
+
+  <script src="js/app.js"></script>
 </body>
+</html>

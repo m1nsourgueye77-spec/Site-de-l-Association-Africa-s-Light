@@ -1,419 +1,631 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<title>Africa's Light Association</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Africa’s Light Association — Hope for Every Child | Dakar, Sénégal
+    </title>
+    <meta
+      name="description"
+      content="Africa’s Light Association, créée en 2025 à Keur Mbaye Fall (Dakar), agit pour la protection, l’éducation, la santé et la dignité des enfants vulnérables. Rejoignez-nous."
+    />
+    <meta name="theme-color" content="#0A2F38" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      property="og:title"
+      content="Africa’s Light Association — Hope for Every Child"
+    />
+    <meta
+      property="og:description"
+      content="Illuminons ensemble l’avenir des enfants vulnérables."
+    />
+    <meta
+      property="og:image"
+      content="https://site-de-l-association-africa-s-light.onrender.com/assets/img/logo.png"
+    />
+    <link rel="icon" type="image/png" href="assets/img/logo-mark.png" />
+    <link rel="preconnect" href="https://images.pexels.com" crossorigin />
+    <link
+      rel="preload"
+      href="assets/fonts/fraunces-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/theme.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "NGO",
+        "name": "Africa’s Light Association",
+        "slogan": "Hope for Every Child",
+        "foundingDate": "2025",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Keur Mbaye Fall, Dakar",
+          "addressCountry": "SN"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+    <div class="progress" aria-hidden="true"></div>
 
-</head>
-<body id="haut">
+    <header class="site-header">
+      <div class="container">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Africa’s Light Association — accueil"
+        >
+          <img src="assets/img/logo-mark.png" width="48" height="46" alt="" />
+          <span><b>Africa’s Light</b><small>Association</small></span>
+        </a>
+        <button
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Ouvrir le menu"
+        >
+          <svg class="icon i-open" aria-hidden="true">
+            <use href="assets/icons.svg#i-menu" />
+          </svg>
+          <svg class="icon i-close" aria-hidden="true">
+            <use href="assets/icons.svg#i-x" />
+          </svg>
+        </button>
+        <nav class="nav" id="nav" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html" aria-current="page">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="projets.html">Nos actions</a></li>
+            <li><a href="commissions.html">Nos commissions</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="adhesion.html">Adhésion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-don" href="soutenir.html">Soutenir notre mission</a>
+        </nav>
+      </div>
+    </header>
 
-<header>
-<div class="logo">
-<img src="Africa's light logo.png" alt="Africa's Light Logo">
-<h2>Africa's Light</h2>
-</div>
-
-  <div class="menu-toggle">☰</div>
-
-
-<nav>
-<ul>
-<li><a href="index.html">Accueil</a></li>
-<li><a href="bureau.html">Bureau</a></li>
-<li><a href="apropos.html">À propos</a></li>
-<li><a href="projets.html">Projets</a></li>
-<li><a href="commissions.html">Commissions</a></li>
-<li><a href="actualites.html">Actualités</a></li>
-<li><a href="galerie.html">Galerie</a></li>
-<li><a href="adhesion.html">Adhésion</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
-</header>
-
-<section class="hero">
-<div class="hero-content">
-<h1>Africa's Light Association</h1>
-<p>
-Ensemble pour une citoyenneté active,
-une solidarité durable et un développement
-au service des communautés.
-</p>
-
-<a href="#adhesion" class="btn">
-Adhérer Maintenant
-</a>
-</div>
-
-</section>
-
-
-  <section class="section">
-  <h2 class="section-title">Notre Impact</h2>
-  <div class="cards">
-    <div class="card" style="text-align:center;">
-      <h1 id="dons">0 FCFA</h1>
-      <p>❤️ Dons collectés</p>
-    </div>
-    
-
-    <div class="card" style="text-align:center;">
-      <h1 id="projets">0</h1>
-      <p>🎯 Projets réalisés</p>
-    </div>
-
-    <div class="card" style="text-align:center;">
-      <h1 id="enfants">0</h1>
-      <p>🎓 Enfants accompagnés</p>
-    </div>
-
-  </div>
-</section>
-
-  
-<section class="section">
-<h2 class="section-title">
-Notre Communauté
-</h2>
-<div class="card" style="text-align:center; max-width:400px; margin:auto;">
-<h1 id="compteur">
-60
-</h1>
-<p>Membres engagés</p>
-</div>
-</section>
-
-
-
-<section class="section">
-  <h2 class="section-title">
-Documents 
-  </h2>
-    <div class="card" style="text-align: center; max-width: 400px; margin: auto;">
-  
-<p class="pdf-download">
-    ⬇️ <a href="TDR-DE-LA-1ERE-EDITION-DE-LASSOCIATION.pdf" target="_blank">Télécharger le document PDF</a>
-  </p>
-  </div>
-</section>
-
-
-<section class="section">
-<h2 class="section-title">
-Nos Activités
-</h2>
-<div class="cards">
-<div class="card">
-<h3>Communication</h3>
-<p>Gestion de l'image et des réseaux sociaux.</p>
-</div>
-<div class="card">
-<h3>Organisation</h3>
-<p>Coordination des activités et événements.</p>
-</div>
-<div class="card">
-<h3>Finances</h3>
-<p>Gestion financière et partenariats.</p>
-</div>
-<div class="card">
-<h3>Mobilisation</h3>
-<p>Adhésion et engagement citoyen.</p>
-</div>
-</div>
-
-</section>
-  
-
-<section class="section" id="galerie">
-  
-<h2 class="section-title">
-📸 Galerie de lAssociation
-</h2>
-<div class="cards">
-
-<div class="card">
-<img src="Remise de dons a Pout.jpeg"
-alt="Action solidaire"
-style="width:100%;border-radius:10px;">
-<h3>Action Solidaire</h3>
-<p>Distribution de dons aux familles vulnérables.</p>
-</div>
-
-
-
-<div class="card">
-<img src="Flyer Journée Porte Ouverte.jpeg"
-alt="Journée Portes Ouvertes"
-style="width:100%;border-radius:10px;">
-<h3>Journée Portes Ouvertes</h3>
-<p>Présentation officielle d'Africa's Light Association.</p>
-</div>
-
-</div>
-
-<br><br>
-
-<video width="400" controls>
-<source src="Africa Light Vidéo 1.mp4" type="video/mp4">
-</video>
-
-<video width="400" controls>
-<source src="Vidéo Journée de réflexion2.mp4" type="video/mp4">
-</video>
-
-
-
-
-</section>
-
-
-
-
-<section class="section" id="adhesion">
-<h2 class="section-title">
-Adhérer à l'Association
-</h2>
-<div class="form-box">
-  
-<form id="adhesionForm">
-  <input type="text" id="nom" placeholder="Nom et prénom" required>
-  <input type="tel" id="telephone" placeholder="Téléphone" required>
-  <input type="email" id="email" placeholder="Adresse email">
-
-  <select id="commission">
-    <option value="">Choisir une commission</option>
-    <option value="Communication">Commission Communication</option>
-    <option value="Organisation">Commission Organisation</option>
-    <option value="Finances">Commission Finances</option>
-    <option value="Mobilisation">Commission Mobilisation</option>
-  </select>
-  <button type="submit">Envoyer la demande</button>
-  
-</form>
-<div id="message" style="text-align:center;margin-top:10px;font-weight:bold;"></div>
-</div>
-</section>
-
-
-
-<section class="section">
-<div class="card"
-style="
-max-width:700px;
-margin:auto;
-text-align:center;
-background:#25D366;
-color:white;
-">
-<h2>
-💬 Nous contacter sur WhatsApp
-</h2>
-<br>
-<p>
-Pour toute information concernant nos activités,
-les adhésions ou les dons.
-</p>
-<br>
-<a
-href="https://wa.me/221780194442?text=Bonjour%20Gi.Code,%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20services."
-target="_blank"
-style="
-background:white;
-color:#25D366;
-padding:15px 30px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-display:inline-block;
-">
-Écrire sur WhatsApp
-</a>
-</div>
-</section>
-  
-
-<section class="section" id="don-wave">
-  <h2 class="section-title">❤️ Soutenir Africa's Light</h2>
-  <div class="card" style="max-width:500px;margin:auto;text-align:center;">
-    <h3>Faire un don via Wave</h3>
-    <p>
-      Scannez ce QR code pour soutenir les actions d'Africa's Light Association.
-    </p>
-    <img src="QR Wave Africa Light.png"
-     alt="QR Code Wave Africa's Light"
-     style="width:250px;max-width:100%;display:block;margin:20px auto;">
-
-    <p style="font-size:14px;color:#555;">
-      Merci pour votre soutien ❤️
-    </p>
-  </div>
-</section>
-
-
-<section id="actualites" style="max-width:900px;margin:auto;padding:20px;font-family:Arial;">
-<h2 style="text-align:center;">Actualités Africa's Light</h2>
-<div id="news-container">Chargement...</div>
-</section>
-
-
-<script>
-const ADMIN_PASS = "Africa123";
-
-fetch(API_URL)
-  .then(res => res.json())
-  .then(data => {
-
-    if (!Array.isArray(data)) throw new Error("API invalide");
-
-    let html = "";
-
-    data.reverse().forEach(item => {
-      html += `
-        <div style="border:1px solid #ddd;padding:15px;margin:10px 0;border-radius:10px;">
-          <h3 style="color:#1a6f5a;">${item.titre || ""}</h3>
-          <small>${item.date || ""}</small>
-          <p>${item.contenu || ""}</p>
+    <main id="contenu">
+      <!-- HERO — IMAGE DE DÉMONSTRATION (Pexels, libre de droits) : à remplacer par une photo réelle de l’association -->
+      <section class="hero" aria-labelledby="titre-hero">
+        <div class="hero-media">
+          <img
+            src="https://images.pexels.com/photos/28593055/pexels-photo-28593055.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            srcset="
+              https://images.pexels.com/photos/28593055/pexels-photo-28593055.jpeg?auto=compress&cs=tinysrgb&w=800   800w,
+              https://images.pexels.com/photos/28593055/pexels-photo-28593055.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w,
+              https://images.pexels.com/photos/28593055/pexels-photo-28593055.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w,
+              https://images.pexels.com/photos/28593055/pexels-photo-28593055.jpeg?auto=compress&cs=tinysrgb&w=1920 1920w
+            "
+            sizes="100vw"
+            width="1600"
+            height="1067"
+            fetchpriority="high"
+            decoding="async"
+            data-demo="true"
+            alt="Image de démonstration : enfants souriants dans une salle de classe africaine"
+          />
         </div>
-      `;
-    });
+        <div class="container">
+          <h1 id="titre-hero">
+            <span class="w" style="--i: 0">Illuminons</span>
+            <span class="w" style="--i: 1">ensemble</span>
+            <span class="w" style="--i: 2">l’avenir</span>
+            <span class="w" style="--i: 3">des</span>
+            <span class="w" style="--i: 4">enfants</span>
+            <span class="w" style="--i: 5">vulnérables.</span>
+          </h1>
+          <p class="sign">Hope for Every Child</p>
+          <p class="lead">
+            Ensemble, agissons pour la protection, l’éducation, la santé et la
+            dignité de chaque enfant.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#actions">Découvrir nos actions</a>
+            <a class="btn btn-ghost" href="#soutenir">Soutenir notre mission</a>
+          </div>
+        </div>
+        <p class="demo-note">Image de démonstration</p>
+        <a class="scroll-cue" href="#mission" aria-label="Défiler vers la suite"
+          ><svg class="icon" aria-hidden="true">
+            <use href="assets/icons.svg#i-arrow-down" /></svg
+        ></a>
+      </section>
 
-    document.getElementById("news-container").innerHTML = html;
+      <!-- QUI NOUS SOMMES / POURQUOI NOUS AGISSONS -->
+      <section class="section" id="mission">
+        <div class="container story">
+          <figure class="reveal">
+            <img
+              src="https://images.pexels.com/photos/28593044/pexels-photo-28593044.jpeg?auto=compress&cs=tinysrgb&w=900"
+              srcset="
+                https://images.pexels.com/photos/28593044/pexels-photo-28593044.jpeg?auto=compress&cs=tinysrgb&w=500   500w,
+                https://images.pexels.com/photos/28593044/pexels-photo-28593044.jpeg?auto=compress&cs=tinysrgb&w=900   900w,
+                https://images.pexels.com/photos/28593044/pexels-photo-28593044.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w
+              "
+              sizes="(min-width:900px) 40vw, 90vw"
+              width="900"
+              height="1125"
+              loading="lazy"
+              decoding="async"
+              data-demo="true"
+              alt="Image de démonstration : enfants africains souriant ensemble"
+            />
+          </figure>
+          <div class="reveal">
+            <span class="eyebrow">Qui nous sommes</span>
+            <h2>Redonner espoir et dignité à chaque enfant.</h2>
+            <p>
+              Africa’s Light Association est née en 2025 à Keur Mbaye Fall, à
+              Dakar. Notre conviction est simple : aucun enfant ne devrait
+              grandir sans protection, sans école, sans soins ni sans respect.
+            </p>
+            <p>
+              Nous agissons auprès des enfants vulnérables, des orphelins, des
+              jeunes filles en situation de fragilité et des enfants victimes
+              d’abandon, par des actions concrètes et durables, portées par des
+              bénévoles et des citoyens engagés.
+            </p>
+            <p style="margin-top: 1.75rem">
+              <a class="btn btn-line" href="apropos.html"
+                >Découvrir notre histoire
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg
+              ></a>
+            </p>
+          </div>
+        </div>
+      </section>
 
-  })
-  .catch(err => {
-    console.error(err);
-    document.getElementById("news-container").innerHTML =
-      "⚠️ Erreur de chargement des actualités";
-  });
-  
-  
-function login(){
-  const pass = document.getElementById("pass").value;
+      <!-- DOMAINES D’INTERVENTION -->
+      <section
+        class="section"
+        style="background: var(--sable)"
+        aria-labelledby="t-domaines"
+      >
+        <div class="container">
+          <span class="eyebrow">Nos domaines d’intervention</span>
+          <h2 id="t-domaines" class="reveal">Cinq axes pour une même cause.</h2>
+          <div class="domains">
+            <article class="domain reveal" style="--d: 0ms">
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-shield-check" />
+              </svg>
+              <h3>Protection de l’enfance</h3>
+              <p>
+                Veiller à la sécurité et aux droits de chaque enfant, avec des
+                actions concrètes.
+              </p>
+            </article>
+            <article class="domain reveal" style="--d: 70ms">
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-book-open" />
+              </svg>
+              <h3>Éducation et soutien scolaire</h3>
+              <p>Accompagner la scolarisation et l’accès au savoir.</p>
+            </article>
+            <article class="domain reveal" style="--d: 140ms">
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-heart-pulse" />
+              </svg>
+              <h3>Santé et bien-être</h3>
+              <p>
+                Soutenir les enfants fragilisés, dont ceux atteints d’Infirmité
+                Motrice Cérébrale (IMC).
+              </p>
+            </article>
+            <article class="domain reveal" style="--d: 210ms">
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-users" />
+              </svg>
+              <h3>Inclusion sociale</h3>
+              <p>
+                Faire de la place à chaque enfant, orphelin ou en situation de
+                handicap.
+              </p>
+            </article>
+            <article class="domain reveal" style="--d: 280ms">
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-hand-heart" />
+              </svg>
+              <h3>Solidarité communautaire</h3>
+              <p>
+                Mobiliser bénévoles, membres et partenaires autour d’une même
+                cause.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  if(pass.trim() === ""){
-    alert("Entrer un mot de passe");
-    return;
-  }
+      <!-- BANDEAU ÉMOTION — IMAGE DE DÉMONSTRATION -->
+      <section class="band" aria-label="Notre conviction">
+        <img
+          src="https://images.pexels.com/photos/6437468/pexels-photo-6437468.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          srcset="
+            https://images.pexels.com/photos/6437468/pexels-photo-6437468.jpeg?auto=compress&cs=tinysrgb&w=800   800w,
+            https://images.pexels.com/photos/6437468/pexels-photo-6437468.jpeg?auto=compress&cs=tinysrgb&w=1200 1200w,
+            https://images.pexels.com/photos/6437468/pexels-photo-6437468.jpeg?auto=compress&cs=tinysrgb&w=1600 1600w
+          "
+          sizes="100vw"
+          width="1600"
+          height="1067"
+          loading="lazy"
+          decoding="async"
+          data-demo="true"
+          alt="Image de démonstration : enfant souriant devant un livre illustré"
+        />
+        <blockquote class="reveal">
+          Chaque enfant mérite d’être protégé, instruit, soigné et respecté.
+        </blockquote>
+        <p class="demo-note">Image de démonstration</p>
+      </section>
 
-  if(pass === ADMIN_PASS){
-    alert("Accès autorisé");
-    document.getElementById("news-container").style.display = "block";
-  } else {
-    alert("Mot de passe incorrect");
-  }
-}
+      <!-- ACTIONS ET PROJETS (contenus issus du site actuel ; statuts à confirmer par le bureau) -->
+      <section class="section" id="actions" aria-labelledby="t-actions">
+        <div class="container">
+          <span class="eyebrow">Nos actions et projets</span>
+          <h2 id="t-actions" class="reveal">
+            Ce que nous faisons, ce que nous préparons.
+          </h2>
+          <p class="intro reveal">
+            Chaque projet indique clairement son statut : une action réalisée
+            n’est jamais confondue avec un projet envisagé.
+          </p>
+          <div class="projects">
+            <article class="project st-done reveal">
+              <span class="badge">Réalisé</span>
+              <h3>Première activité de l’association</h3>
+              <p>
+                Remise de dons à la Maison des Enfants Handicapés de Pout, puis
+                distribution de Ndogou au Daarah Sokhna Fatou Kiné Ndiaye à
+                Rufisque Fass.
+              </p>
+              <div class="meta">
+                <span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-calendar" /></svg
+                  >7 mars 2026</span
+                ><span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-map-pin" /></svg
+                  >Pout et Rufisque Fass</span
+                >
+              </div>
+              <a class="btn btn-line" href="actualites.html#activite-2026"
+                >En savoir plus</a
+              >
+            </article>
+            <article class="project st-done reveal" style="--d: 80ms">
+              <span class=".st-done .badge">Réalisé</span>
+              <h3>Journée portes ouvertes et appel aux dons</h3>
+              <p>
+                Une journée dédiée aux enfants vulnérables, aux orphelins et aux
+                enfants atteints d’IMC, avec un appel aux dons en nature ou en
+                espèces.
+              </p>
+              <div class="meta">
+                <span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-calendar" /></svg
+                  >11 juillet 2026</span
+                ><span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-map-pin" /></svg
+                  >CDEPS de Petit Mbao</span
+                >
+              </div>
+              <a class="btn btn-line" href="actualites.html">En savoir plus</a>
+            </article>
+            <article class="project reveal" style="--d: 160ms">
+              <span class="badge">Statut à confirmer</span>
+              <h3>Hope for Every Child</h3>
+              <p>
+                Accompagnement des enfants vulnérables, des orphelins et des
+                enfants atteints d’Infirmité Motrice Cérébrale (IMC).
+              </p>
+              <div class="meta">
+                <span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-calendar" /></svg
+                  >26 Décembre 2026</span
+                ><span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-map-pin" /></svg
+                  >Lieu à préciser</span
+                >
+              </div>
+              <a class="btn btn-line" href="projets.html">En savoir plus</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <!-- IMPACT ET TRANSPARENCE : aucun chiffre tant qu’il n’est pas validé -->
+      <section
+        class="section"
+        style="background: var(--sable)"
+        aria-labelledby="t-trust"
+      >
+        <div class="container trust">
+          <div class="reveal">
+            <span class="eyebrow">Impact et transparence</span>
+            <h2 id="t-trust">
+              Des résultats publiés seulement quand ils sont vérifiés.
+            </h2>
+          </div>
+          <div class="reveal">
+            <div class="pillars">
+              <div>
+                <h3>Transparence</h3>
+                <p>
+                  Rapports d’activités et bilans publiés après validation par le
+                  bureau.
+                </p>
+              </div>
+              <div>
+                <h3>Dignité de l’enfant</h3>
+                <p>Aucune photo d’enfant n’est publiée sans autorisation.</p>
+              </div>
+              <div>
+                <h3>Responsabilité</h3>
+                <p>Chaque contribution a un usage clairement expliqué.</p>
+              </div>
+              <div>
+                <h3>Solidarité</h3>
+                <p>Une action collective, portée par des membres bénévoles.</p>
+              </div>
+            </div>
+            <p class="note">
+              Les indicateurs chiffrés (actions menées, soutiens mobilisés,
+              enfants accompagnés) seront affichés ici dès qu’ils auront été
+              validés.
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-file-text" />
+              </svg>
+              <a
+                href="docs/termes-de-reference-1ere-edition.pdf"
+                target="_blank"
+                rel="noopener"
+                >Consulter les termes de référence de la 1ʳᵉ édition (PDF)</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <!-- APPEL À L’ENGAGEMENT -->
+      <section class="section on-dark" aria-labelledby="t-engage">
+        <div class="container">
+          <span class="eyebrow">Passez à l’action</span>
+          <h2 id="t-engage" class="reveal">
+            Il y a mille façons d’allumer une lumière.
+          </h2>
+          <div class="tiles">
+            <a class="tile reveal" style="--d: 0ms" href="#soutenir"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-heart" />
+              </svg>
+              <h3>Faire un don</h3>
+              <p>Soutenez nos actions via Wave.</p>
+              <span class="go"
+                >Passer à l’action
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg></span
+            ></a>
+            <a class="tile reveal" style="--d: 60ms" href="adhesion.html"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-hand-helping" />
+              </svg>
+              <h3>Devenir bénévole</h3>
+              <p>Donnez de votre temps et de vos compétences.</p>
+              <span class="go"
+                >Passer à l’action
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg></span
+            ></a>
+            <a class="tile reveal" style="--d: 120ms" href="adhesion.html"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-user-plus" />
+              </svg>
+              <h3>Adhérer à l’association</h3>
+              <p>Rejoignez l’une de nos quatre commissions.</p>
+              <span class="go"
+                >Passer à l’action
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg></span
+            ></a>
+            <a class="tile reveal" style="--d: 180ms" href="contact.html"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-handshake" />
+              </svg>
+              <h3>Devenir partenaire</h3>
+              <p>Entreprises, associations : agissons ensemble.</p>
+              <span class="go"
+                >Passer à l’action
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg></span
+            ></a>
+            <a class="tile reveal" style="--d: 240ms" href="contact.html"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-gift" />
+              </svg>
+              <h3>Faire un don matériel</h3>
+              <p>Fournitures, vivres, vêtements : contactez-nous.</p>
+              <span class="go"
+                >Passer à l’action
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg></span
+            ></a>
+            <a class="tile reveal" style="--d: 300ms" href="contact.html"
+              ><svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-megaphone" />
+              </svg>
+              <h3>Devenir ambassadeur</h3>
+              <p>Portez notre message autour de vous.</p>
+              <span class="go"
+                >Passer à l’action
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg></span
+            ></a>
+          </div>
+        </div>
+      </section>
 
-const API_ADHESION = "https://script.google.com/macros/s/AKfycbwxpxE6AB4F-JwZBS-zho3pswtjqLnilhZSexh2xpCZy1jt8RAOjn2Dkh_Sqr7pWlkd/exec";
+      <!-- SOUTENIR : QR Wave officiel, non modifié -->
+      <section class="section" id="soutenir" aria-labelledby="t-soutenir">
+        <div class="container support">
+          <div class="reveal">
+            <span class="eyebrow">Soutenir notre mission</span>
+            <h2 id="t-soutenir">Faire un don via Wave.</h2>
+            <p class="intro">
+              Scannez le QR code avec votre application Wave pour soutenir les
+              actions d’Africa’s Light Association. Vous pouvez aussi nous
+              écrire pour un don matériel ou un partenariat.
+            </p>
+            <p style="margin-top: 1.75rem">
+              <a class="btn btn-line" href="contact.html"
+                >Nous contacter
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-arrow-right" /></svg
+              ></a>
+            </p>
+          </div>
+          <figure class="qr reveal" style="margin-block: 0">
+            <img
+              src="assets/img/qr-wave.png"
+              width="1196"
+              height="1684"
+              loading="lazy"
+              alt="QR code Wave officiel d’Africa’s Light Association"
+            />
+            <figcaption><p>QR code Wave officiel</p></figcaption>
+          </figure>
+        </div>
+      </section>
 
-document.getElementById("adhesionForm").addEventListener("submit", function(e){
-  e.preventDefault();
+      <!-- ACTUALITÉS (uniquement les publications réelles du site actuel) -->
+      <section
+        class="section"
+        style="background: var(--sable)"
+        aria-labelledby="t-news"
+      >
+        <div class="container">
+          <span class="eyebrow">Actualités</span>
+          <h2 id="t-news" class="reveal">Les dernières nouvelles.</h2>
+          <div class="news">
+            <a class="reveal" href="actualites.html"
+              ><time datetime="2026-07-11">11 juillet 2026</time>
+              <h3>Journée portes ouvertes et appel aux dons</h3>
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-arrow-right" /></svg
+            ></a>
+            <a class="reveal" href="actualites.html#activite-2026"
+              ><time datetime="2026-03-07">7 mars 2026</time>
+              <h3>Première activité d’Africa’s Light Association</h3>
+              <svg class="icon" aria-hidden="true">
+                <use href="assets/icons.svg#i-arrow-right" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  const data = {
-    nom: document.getElementById("nom").value,
-    telephone: document.getElementById("telephone").value,
-    email: document.getElementById("email").value,
-    commission: document.getElementById("commission").value
-  };
+    <footer class="site-footer">
+      <div class="container">
+        <div class="foot">
+          <div>
+            <img
+              src="assets/img/logo-light.png"
+              width="113"
+              height="130"
+              alt="Africa’s Light Association"
+              loading="lazy"
+            />
+            <p>
+              Ensemble pour la protection, l’éducation, la santé et la dignité
+              des enfants vulnérables. <strong>Hope for Every Child.</strong>
+            </p>
+          </div>
+          <nav aria-label="Navigation du pied de page">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="apropos.html">À propos</a></li>
+              <li><a href="bureau.html">Bureau</a></li>
+              <li><a href="projets.html">Nos actions</a></li>
+              <li><a href="commissions.html">Commissions</a></li>
+              <li><a href="actualites.html">Actualités</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="adhesion.html">Adhésion</a></li>
+            </ul>
+          </nav>
+          <!-- À VALIDER PAR L’ASSOCIATION : e-mail et téléphone officiels (le site actuel affiche deux e-mails et deux numéros différents) -->
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-mail" />
+                </svg>
+                <a href="mailto:africaslightassociation@gmail.com"
+                  >africaslightassociation@gmail.com</a
+                >
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-phone" />
+                </svg>
+                <a href="tel:+221780194442">+221  780194442/ 785255300 / 7112631839</a>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-map-pin" />
+                </svg>
+                Keur Mbaye Fall, Dakar, Sénégal
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Nous soutenir</h3>
+            <ul>
+              <li><a href="soutenir.html">Faire un don (Wave)</a></li>
+              <li><a href="adhesion.html">Devenir bénévole ou membre</a></li>
+              <li><a href="contact.html">Partenariats et dons matériels</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© 2026 Africa’s Light Association</span>
+          <span
+            ><a href="mentions-legales.html">Mentions légales</a> ·
+            <a href="mentions-legales.html#confidentialite"
+              >Confidentialité</a
+            ></span
+          >
+          <span
+            >Site conçu et développé par
+            <strong> Bella Woury Diallo et Mansour Gueye – Gi.Code</strong></span
+          >
+        </div>
+      </div>
+    </footer>
 
-  fetch(API_ADHESION, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  })
-  .then(res => res.text())
-  .then(response => {
-    console.log("Réponse API:", response);
-
-    document.getElementById("message").innerHTML =
-      "✅ Demande envoyée avec succès !";
-
-    document.getElementById("adhesionForm").reset();
-  })
-  .catch(err => {
-    console.error(err);
-    document.getElementById("message").innerHTML =
-      "❌ Erreur d'envoi, réessayez.";
-  });
-
-});
-
-
-  let compteur = 0;
-setInterval(() => {
-  if(compteur < 150){ // exemple
-    compteur++;
-    document.getElementById("compteur").innerText = compteur;
-  }
-}, 50);
-
-  document.querySelector(".menu-toggle")
-.addEventListener("click", () => {
-  document.querySelector("nav")
-  .classList.toggle("active");
-});
-
-
-  function compteur(id, fin) {
-  let n = 0;
-  const el = document.getElementById(id);
-
-  const timer = setInterval(() => {
-    n++;
-    el.textContent = n;
-
-    if (n >= fin) {
-      clearInterval(timer);
-    }
-  }, 30);
-}
-
-compteur("membres", 150);
-compteur("projets", 12);
-compteur("enfants", 250);
-
-  
-</script>
-
-
-<footer>
-<h3>Africa's Light Association</h3>
-<p>
-Ensemble pour une citoyenneté active
-et un développement solidaire.</p>
-
-<br>
-<h3>E-MAIL</h3>
-<p>📧 <a href="mailto:africaslightassociation@gmail.com">
-africaslightassociation@gmail.com
-  📍 Dakar - Sénégal
-</a></p>
-
-<br>
-<h3>Nos Contacts</h3>
-<p>📱 76 473 77 29</p>
-<p>📱 780194442</p>
-
-<br>
-<p>
-© 2026 Africa's Light Association
-</p>
-<p>
-Site conçu et développé par
-<strong>Mansour Gueye - Gi.Code</strong>
-</p>
-</footer>
-
-<script>
-document.getElementById("dons").textContent = "1 250 000 FCFA";
-</script>
-
-  <script src="js/app.js"></script>
-</body>
+    <script src="js/main.js" defer></script>
+  </body>
 </html>

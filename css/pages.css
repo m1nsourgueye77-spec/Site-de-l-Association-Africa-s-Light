@@ -1,0 +1,74 @@
+/* Pages internes — s'ajoute à theme.css */
+.page-head{position:relative;overflow:hidden;background:var(--nuit);color:var(--ivoire);padding:calc(var(--header-h) + 4.5rem) 0 4.5rem}
+.page-head::before{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 180deg at 100% 0,rgba(232,168,36,.13) 0 2.2deg,transparent 2.2deg 11deg);-webkit-mask:linear-gradient(225deg,#000,transparent 70%);mask:linear-gradient(225deg,#000,transparent 70%)}
+.page-head .container{position:relative}
+.page-head h1{color:var(--ivoire);font-size:clamp(2.4rem,5.5vw,4.25rem);max-width:18ch}
+.page-head p{margin-top:1.25rem;max-width:56ch;font-size:1.15rem;color:rgba(250,246,238,.9)}
+.page-head .eyebrow{color:var(--ocre)}
+.prose{max-width:66ch}.prose p+p,.prose ul{margin-top:1rem}
+.prose h2{margin-bottom:1.25rem}
+.two{display:grid;gap:3rem}@media(min-width:900px){.two{grid-template-columns:5fr 7fr;gap:5rem}}
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin-top:2rem}
+.values div{border-top:2px solid var(--teal);padding-top:1rem}.values h3{font-size:1.2rem}
+/* filtres */
+.filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2rem}
+.filters button{font:700 .875rem var(--font-body);padding:.6rem 1.1rem;border:2px solid var(--teal);background:transparent;color:var(--teal);cursor:pointer;transition:background-color .25s,color .25s}
+.filters button[aria-pressed="true"]{background:var(--teal);color:#fff}
+[hidden]{display:none!important}
+/* commissions */
+.commissions{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.75rem}
+.commission{background:#fff;padding:2rem;display:flex;flex-direction:column;gap:.9rem;border-top:5px solid var(--teal)}
+.commission .icon{width:2.25rem;height:2.25rem;color:var(--teal)}.commission .btn{margin-top:auto;align-self:flex-start}
+/* bureau */
+.people-title{margin:4rem 0 1.75rem;font-size:1.75rem}.people-title:first-of-type{margin-top:0}
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:2rem 1.5rem}
+.person img{aspect-ratio:3/4;width:100%;object-fit:cover;background:var(--sable)}
+.person h3{font-size:1.1rem;margin-top:.8rem}.person p{font-size:.88rem;color:#3d4d51;line-height:1.4;margin-top:.2rem}
+.notice{margin-top:3rem;padding:1.1rem 1.25rem;background:var(--sable);font-size:.95rem}
+/* actualités */
+.article{padding-block:3rem;border-bottom:1px solid rgba(10,47,56,.2)}.article:first-child{padding-top:0}
+.article time{font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ocre-txt)}
+.article h2{margin:.6rem 0 1.25rem;font-size:clamp(1.8rem,3.5vw,2.6rem)}
+.facts{display:flex;flex-wrap:wrap;gap:.5rem 2rem;margin-bottom:1.25rem;font-weight:600}
+.facts span{display:flex;gap:.5rem;align-items:center}.facts .icon{width:1.1rem;height:1.1rem;color:var(--teal)}
+/* galerie */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem;margin-top:2rem}
+.gallery button{padding:0;border:0;background:none;cursor:zoom-in;text-align:left;color:inherit;font:inherit}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s var(--ease)}
+.gallery .frame{overflow:hidden;background:var(--sable)}.gallery button:hover img{transform:scale(1.04)}
+.gallery figcaption{margin-top:.6rem;font-size:.95rem}
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-top:2rem}
+.videos video{width:100%;max-height:70vh;background:#000;object-fit:contain}
+.videos h3{font-size:1.15rem;margin-top:.6rem}
+dialog.lb{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;color:#fff}
+dialog.lb::backdrop{background:rgba(10,47,56,.94)}
+.lb-inner{height:100%;display:grid;grid-template-rows:1fr auto;place-items:center;padding:1rem}
+.lb img{max-width:min(92vw,900px);max-height:78vh;object-fit:contain}
+.lb-cap{padding:1rem;text-align:center}
+.lb button{position:fixed;background:rgba(250,246,238,.12);color:#fff;border:0;width:3rem;height:3rem;cursor:pointer;display:grid;place-items:center}
+.lb button:hover{background:var(--ocre);color:var(--nuit)}
+.lb .x{top:1rem;right:1rem}.lb .pv{left:1rem;top:50%}.lb .nx{right:1rem;top:50%}.lb .pv .icon{rotate:180deg}
+/* formulaires */
+.form{max-width:640px;display:grid;gap:1.4rem}
+.field label,.field legend{display:block;font-weight:700;font-size:.95rem;margin-bottom:.4rem}
+.req{color:var(--terre)}
+.field input,.field select,.field textarea{width:100%;padding:.9rem 1rem;font:inherit;border:2px solid #b9c3c4;background:#fff;color:var(--encre);border-radius:2px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid var(--ocre);outline-offset:1px;border-color:var(--teal)}
+.field [aria-invalid="true"]{border-color:var(--terre)}
+.err{color:#9c2f0b;font-size:.9rem;font-weight:600;margin-top:.35rem;min-height:0}
+.hint{font-size:.85rem;color:#3d4d51;margin-top:.3rem}
+.check{display:flex;gap:.75rem;align-items:flex-start}.check input{width:1.3rem;height:1.3rem;margin-top:.2rem;flex:none;accent-color:var(--teal)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.status{padding:1.25rem 1.4rem;border-left:5px solid var(--teal);background:#fff;font-weight:600}
+.status.ok{border-color:var(--vert)}.status.warn{border-color:var(--terre)}
+.status a{font-weight:700}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+/* contact */
+.contact-list{display:grid;gap:1.25rem;list-style:none;padding:0;margin:0}
+.contact-list li{display:flex;gap:1rem;align-items:flex-start}.contact-list .icon{color:var(--teal);margin-top:.2rem}
+.contact-list strong{display:block}
+/* soutien */
+.ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;margin-top:2.5rem}
+.way{background:#fff;padding:1.75rem;border-top:4px solid var(--ocre)}.way .icon{width:2rem;height:2rem;color:var(--teal);margin-bottom:.8rem}.way h3{font-size:1.25rem;margin-bottom:.4rem}
+.legal-page h2{font-size:1.6rem;margin:2.5rem 0 .8rem}.legal-page ul{padding-left:1.2rem}
+.todo{background:#fff3cf;padding:.05rem .35rem}

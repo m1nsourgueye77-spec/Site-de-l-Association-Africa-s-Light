@@ -1,76 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projets - Africa's Light</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-<header>
-<div class="logo">
-<img src="images/Logo Africa's Light.png" alt="Logo Africa's Light">
-<h2>Africa's Light</h2>
-</div>
-
-<div class="menu-toggle">☰</div>
-
-<nav>
-<ul>
-<li><a href="index.html">Accueil</a></li>
-<li><a href="projets.html">Projets</a></li>
-</ul>
-</nav>
-</header>
-
-<section class="section">
-
-<h1 class="section-title">
-🎯 Nos Projets
-</h1>
-
-<div class="cards">
-
-<div class="card">
-<h3>🌙 Ramadan Solidaire</h3>
-<p>
-Distribution de vivres et soutien aux familles vulnérables durant le mois de Ramadan.
-</p>
-</div>
-
-<div class="card">
-<h3>🏫 Journée Portes Ouvertes</h3>
-<p>
-Présentation de l'association, sensibilisation et appel aux dons pour les actions sociales.
-</p>
-</div>
-
-<div class="card">
-<h3>❤️ Hope for Every Child</h3>
-<p>
-Accompagnement des enfants vulnérables, des orphelins et des enfants atteints d'Infirmité Motrice Cérébrale (IMC).
-</p>
-</div>
-
-</div>
-
-<br>
-
-<div style="text-align:center;">
-<a href="index.html" class="btn">
-← Retour à l'accueil
-</a>
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 Africa's Light Association</p>
-</footer>
-
-<script src="js/app.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nos actions et projets — Africa’s Light Association</title>
+    <meta
+      name="description"
+      content="Les actions réalisées et les projets d’Africa’s Light Association, avec leur statut."
+    />
+    <meta name="theme-color" content="#0A2F38" />
+    <link
+      rel="canonical"
+      href="https://site-de-l-association-africa-s-light.onrender.com/projets.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      property="og:title"
+      content="Nos actions et projets — Africa’s Light Association"
+    />
+    <meta
+      property="og:description"
+      content="Les actions réalisées et les projets d’Africa’s Light Association, avec leur statut."
+    />
+    <meta
+      property="og:image"
+      content="https://site-de-l-association-africa-s-light.onrender.com/assets/img/logo.png"
+    />
+    <link rel="icon" type="image/png" href="assets/img/logo-mark.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/fraunces-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin-wght-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+  </head>
+  <body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+    <div class="progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Africa’s Light Association — accueil"
+          ><img
+            src="assets/img/logo-mark.png"
+            width="48"
+            height="46"
+            alt=""
+          /><span><b>Africa’s Light</b><small>Association</small></span></a
+        >
+        <button
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Ouvrir le menu"
+        >
+          <svg class="icon i-open" aria-hidden="true">
+            <use href="assets/icons.svg#i-menu" /></svg
+          ><svg class="icon i-close" aria-hidden="true">
+            <use href="assets/icons.svg#i-x" />
+          </svg>
+        </button>
+        <nav class="nav" id="nav" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="projets.html" aria-current="page">Nos actions</a></li>
+            <li><a href="commissions.html">Nos commissions</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="adhesion.html">Adhésion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="btn btn-don" href="soutenir.html">Soutenir notre mission</a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenu">
+      <section class="page-head">
+        <div class="container">
+          <span class="eyebrow">Nos actions</span>
+          <h1>Ce que nous faisons, ce que nous préparons.</h1>
+          <p>
+            Chaque projet indique son statut : une action réalisée n’est jamais
+            confondue avec un projet envisagé.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="filters" role="group" aria-label="Filtrer par statut">
+            <button data-filter="all" aria-pressed="true">Tous</button
+            ><button data-filter="done" aria-pressed="false">Réalisé</button
+            ><button data-filter="confirm" aria-pressed="false">
+              Statut à confirmer
+            </button>
+          </div>
+          <div class="projects">
+            <article class="project st-done" data-status="done">
+              <span class="badge">Réalisé</span>
+              <h3>Première activité de l’association</h3>
+              <p>
+                Remise de dons à la Maison des Enfants Handicapés de Pout, puis
+                distribution de Ndogou au Daarah Sokhna Fatou Kiné Ndiaye à
+                Rufisque Fass.
+              </p>
+              <div class="meta">
+                <span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-calendar" /></svg
+                  >7 mars 2026</span
+                ><span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-map-pin" /></svg
+                  >Pout et Rufisque Fass</span
+                >
+              </div>
+              <a class="btn btn-line" href="actualites.html#activite-2026"
+                >En savoir plus</a
+              >
+            </article>
+            <article class="project st-done" data-status="done">
+              <span class="badge">Réaliser</span>
+              <h3>Journée portes ouvertes et appel aux dons</h3>
+              <p>
+                Une journée dédiée aux enfants vulnérables, aux orphelins et aux
+                enfants atteints d’IMC, avec un appel aux dons en nature ou en
+                espèces.
+              </p>
+              <div class="meta">
+                <span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-calendar" /></svg
+                  >11 juillet 2026</span
+                ><span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-map-pin" /></svg
+                  >CDEPS de Petit Mbao</span
+                >
+              </div>
+              <a
+                class="btn btn-line"
+                href="actualites.html#journee-portes-ouvertes"
+                >En savoir plus</a
+              >
+            </article>
+            <article class="project" data-status="confirm">
+              <span class="badge">Statut à confirmer</span>
+              <h3>Dîner de Bienfaisance</h3>
+              <p>
+                Accompagnement des enfants vulnérables, des orphelins et des
+                enfants atteints d’Infirmité Motrice Cérébrale (IMC).
+              </p>
+              <div class="meta">
+                <span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-calendar" /></svg
+                  >26 Décembre 2026</span
+                ><span
+                  ><svg class="icon" aria-hidden="true">
+                    <use href="assets/icons.svg#i-map-pin" /></svg
+                  >Lieu à préciser</span
+                >
+              </div>
+              <a class="btn btn-line" href="contact.html">En savoir plus</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="foot">
+          <div>
+            <img
+              src="assets/img/logo-light.png"
+              width="113"
+              height="130"
+              alt="Africa’s Light Association"
+              loading="lazy"
+            />
+            <p>
+              Ensemble pour la protection, l’éducation, la santé et la dignité
+              des enfants vulnérables. <strong>Hope for Every Child.</strong>
+            </p>
+          </div>
+          <nav aria-label="Navigation du pied de page">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="apropos.html">À propos</a></li>
+              <li><a href="bureau.html">Bureau</a></li>
+              <li><a href="projets.html">Nos actions</a></li>
+              <li><a href="commissions.html">Commissions</a></li>
+              <li><a href="actualites.html">Actualités</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="adhesion.html">Adhésion</a></li>
+            </ul>
+          </nav>
+          <!-- À VALIDER PAR L’ASSOCIATION : e-mail et téléphone officiels -->
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-mail" />
+                </svg>
+                <a href="mailto:africaslightassociation@gmail.com"
+                  >africaslightassociation@gmail.com</a
+                >
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-phone" />
+                </svg>
+                <a href="tel:+221780194442/">+221780194442</a>
+              </li>
+              <li>
+                <svg class="icon" aria-hidden="true">
+                  <use href="assets/icons.svg#i-map-pin" />
+                </svg>
+                Keur Mbaye Fall, Dakar, Sénégal
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Nous soutenir</h3>
+            <ul>
+              <li><a href="soutenir.html">Faire un don (Wave)</a></li>
+              <li><a href="adhesion.html">Devenir bénévole ou membre</a></li>
+              <li><a href="contact.html">Partenariats et dons matériels</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="legal">
+          <span>© 2026 Africa’s Light Association</span
+          ><span
+            ><a href="mentions-legales.html">Mentions légales</a> ·
+            <a href="mentions-legales.html#confidentialite"
+              >Confidentialité</a
+            ></span
+          ><span
+            >Site conçu et développé par
+            <strong>Bella Woury Diallo et Mansour Gueye – Gi.Code</strong></span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js" defer></script>
+    <script src="js/pages.js" defer></script>
+  </body>
 </html>

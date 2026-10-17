@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://site-de-l-association-africa-s-light.onrender.com/sitemap.xml

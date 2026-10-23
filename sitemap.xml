@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/index.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/apropos.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/bureau.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/projets.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/commissions.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/actualites.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/galerie.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/adhesion.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/contact.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/soutenir.html</loc></url>
-<url><loc>https://site-de-l-association-africa-s-light.onrender.com/mentions-legales.html</loc></url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/apropos.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/actualites.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/adhesion.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/bureau.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/commissions.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/galerie.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/projets.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/soutenir.html</loc>
+  </url>
+  <url>
+    <loc>https://site-de-l-association-africa-s-light.onrender.com/mentions-legales.html</loc>
+  </url>
 </urlset>
